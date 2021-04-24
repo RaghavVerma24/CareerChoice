@@ -1,0 +1,269 @@
+/*
+	App by FreeHTML5.co
+	Twitter: http://twitter.com/fh5co
+	URL: http://freehtml5.co
+*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", "sans-serif";
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+#fh5co-hero-wrapper {
+  height: 800px;
+  width: 100%;
+  background: url("../img/banner-bg.jpg") no-repeat center;
+  border-radius: 0 0 50% 50% / 4%;
+}
+
+.main-navbar-nav .navbar-brand {
+  font-size: 38px;
+  letter-spacing: 4px;
+  position: relative;
+  top: -5px;
+  font-weight: 500;
+}
+
+.main-navbar-nav {
+  color: #fff !important;
+}
+.main-navbar-nav li {
+  color: #fff;
+  opacity: .7;
+}
+.main-navbar-nav .navbar-nav .nav-item a:hover {
+  color: #234197 !important;
+  -webkit-transition: all .33s ease;
+  -moz-transition: all .33s ease;
+  -o-transition: all .33s ease;
+  -ms-transition: all .33s ease;
+  transition: all .33s ease;
+}
+.main-navbar-nav .active {
+  color: #fff !important;
+  opacity: 1 !important;
+}
+.main-navbar-nav a {
+  color: #fff !important;
+}
+.main-navbar-nav .nav-link {
+  opacity: 1 !important;
+  margin: 0 35px;
+  font-size: 14.5px;
+  font-weight: 500;
+}
+
+.social-icons-header i {
+  margin: 15px;
+  font-size: 20px;
+}
+
+.social-icons-header a:hover i {
+  opacity: .6;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.fh5co-hero-inner {
+  margin-top: 110px;
+  position: relative;
+}
+.fh5co-hero-inner > h1 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 55px;
+  letter-spacing: 2px;
+}
+.fh5co-hero-inner > p {
+  width: 400px;
+  font-size: 14px;
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 2em;
+}
+.fh5co-hero-inner .download-btn-first {
+  font-size: 15px;
+  padding: 10px 15px;
+  font-weight: 700;
+  color: #234197;
+}
+.fh5co-hero-inner .features-btn-first {
+  font-size: 15px;
+  padding: 8px 13px;
+  font-weight: 400;
+  background: #234197;
+  color: #fff;
+  margin-left: 10px;
+}
+.fh5co-hero-inner .fh5co-hero-smartphone {
+  position: absolute;
+  right: 300px;
+  top: 0px;
+  height: 400px;
+}
+
+/* ==========================================================================================================
+										ADVANTAGES
+   ========================================================================================================== */
+.fh5co-advantages-outer {
+  padding: 70px;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+.fh5co-advantages-outer .span-perfect {
+  color: #648cff;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.fh5co-advantages-outer .span-features {
+  text-transform: uppercase;
+  font-size: 35px;
+}
+.fh5co-advantages-outer .second-title {
+  text-align: center;
+  display: block;
+}
+.fh5co-advantages-outer small {
+  display: block;
+  text-align: center;
+}
+.fh5co-advantages-outer .fh5co-advantages-grid-columns {
+  margin-top: 120px;
+}
+.fh5co-advantages-outer .fh5co-advantages-grid-columns .col-sm-4 .grid-image {
+  width: 30%;
+  float: left;
+  padding-right: 30px;
+  position: relative;
+  top: 1px;
+  color: #648cff;
+}
+.fh5co-advantages-outer .fh5co-advantages-grid-columns .col-sm-4 .grid-title {
+  float: left;
+  font-size: 20px;
+  font-weight: 600;
+}
+.fh5co-advantages-outer .fh5co-advantages-grid-columns .col-sm-4 .grid-desc {
+  float: right;
+  font-size: 13px;
+  padding-right: 7%;
+  width: 70%;
+  color: #c7c7c7;
+  margin-top: 10px;
+  line-height: 1.87em;
+}
+
+.fh5co-slider-inner {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.search-result {
+  margin-top: 50px;
+  padding: 30px 0 0;
+  width: 100%;
+  display: grid;
+  grid-gap: 25px;
+  grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+}
+
+h5 {
+  font-size: 20px;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgb(190, 248, 252);
+  padding: 15px;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.item h5 {
+  color: black;
+  font-weight: bolder;
+  margin: auto 0 0 0 0;
+}
+
+.date {
+  color: black;
+  margin: auto 0 0 0 0;
+  float: right;
+}
+
+.item h6 {
+  color: black;
+  margin: auto 0 0 0 0;
+}
+
+.btn {
+  text-decoration: none;
+  text-align: center;
+  width: 130px;
+  padding: 7px 0;
+  background-color: rgb(66, 236, 255);
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 20px;
+  align-self: flex-start;
+}
+
+.btn:hover {
+  color: whitesmoke;
+  background-color: rgb(41, 205, 255);
+  transition: 0.6s;
+}
+
+.btn1 {
+  border-radius: 5px;
+  background-color: rgb(72, 72, 190);
+  color: whitesmoke;
+  padding: 10px 15px;
+  font-weight: bold;
+  border: none;
+}
+
+.btn1:hover {
+  color: rgb(58, 51, 51);
+  background-color: rgb(209, 209, 255);
+  transition: 0.6s;
+} 
+
+.btn2 {
+  border-radius: 5px;
+  background-color: rgb(209, 209, 255);
+  color: rgb(58, 51, 51);
+  padding: 10px 15px;
+  font-weight: bold;
+  border: none;
+  margin-left: 10px;
+}
+
+.btn2:hover {
+  color: whitesmoke;
+  background-color: rgb(72, 72, 190);
+  transition: 0.6s;
+} 

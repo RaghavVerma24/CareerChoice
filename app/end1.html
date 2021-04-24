@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="css/survey.css">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container1">
+        <h1 class="header1">Congratulations!</h1>
+        <h2 class="component-score1" id="scorenew" style="margin-bottom: 20px;">Your compatibility is: </h2>
+        <h3 class="description">Your jobs opportunties are: </h3>
+        <ul>
+            <li id="score1">Business Analyst: </li>
+            <li id="score2">Accounting: </li>
+            <li id="score3">Financial Advisor: </li>
+            <li id="score4">Entrepreneur: </li>
+            <li id="score5">Actuary: </li>
+        </ul>
+        <a href="index.html" class="btn1">Back to Quiz<i class="fas fa-backward"></i></a>
+    </div>
+    <script>
+        const totalScore = new URLSearchParams(window.location.search);
+        const myParam = totalScore.get('score');
+        const myMaxQuestions = totalScore.get('max');
+        const random1 = Math.floor((Math.random() * (10 - (-10) + 1)) - 10);
+        const random2 = Math.floor((Math.random() * (10 - (-10) + 1)) - 10);
+        const random3 = Math.floor((Math.random() * (10 - (-10) + 1)) - 10);
+        const random4 = Math.floor((Math.random() * (10 - (-10) + 1)) - 10);
+        const random5 = Math.floor((Math.random() * (10 - (-10) + 1)) - 10);
+        document.getElementById('score1').innerHTML += Math.round((myParam/(myMaxQuestions * 5)) * 100) + random1 + "%";
+        document.getElementById('score2').innerHTML += Math.round((myParam/(myMaxQuestions * 5)) * 100) + random2 + "%";
+        document.getElementById('score3').innerHTML += Math.round((myParam/(myMaxQuestions * 5)) * 100) + random3 + "%";
+        document.getElementById('score4').innerHTML += Math.round((myParam/(myMaxQuestions * 5)) * 100) + random4 + "%";
+        document.getElementById('score5').innerHTML += Math.round((myParam/(myMaxQuestions * 5)) * 100) + random5 + "%";
+        // const myStream = totalScore.get('stream');
+        document.getElementById('scorenew').innerHTML += Math.round((myParam/(myMaxQuestions * 5)) * 100) + "%";
+        // document.getElementById('attempt').innerHTML = 
+    </script>
+</body>
+</html>

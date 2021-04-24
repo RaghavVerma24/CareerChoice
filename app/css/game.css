@@ -1,0 +1,77 @@
+body {
+    color: #fff;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background-image: linear-gradient(to right, rgb(167, 185, 255), rgb(92, 117, 242));
+    font-size: 2rem;
+    min-width: 60rem;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(49, 118, 202, 0.6);
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+.choice-prefix {
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.choice-text {
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.correct {
+    background: linear-gradient(32deg, rgba(11, 223, 36) 0%, rgb(41, 232, 111) 100%);
+}
+
+/* Heads up Display */
+#component {
+    display: flex;
+    justify-content: space-between;
+}
+
+.component-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.component-score {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 2rem;
+    border: 0.2rem solid rgb(11,223,36);
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: rgb(11,223,36);
+    width: 0%;
+}
+
+@media screen and (max-width: 768px) {
+    .choice-container {
+        min-width: 40rem;
+    }
+}
